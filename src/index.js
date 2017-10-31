@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import 'semantic-ui-css/semantic.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import HeaderTopBar from './components/header_top_bar';
+
+class App extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state= { currentState: ''}
+    }
+
+    render() {
+        return (
+            <div>
+                <HeaderTopBar />
+            </div>
+        );
+    }
+}
+
+ReactDOM.render( <App />, document.getElementById('root'));
