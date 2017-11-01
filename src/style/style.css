@@ -1,0 +1,124 @@
+.search-bar input{
+    width: 100%
+}
+
+.ui.input {
+    width: 100%;
+}
+
+.main-navigation{
+    margin-top: 10px;
+}
+
+.light-border{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23921568627450981);
+}
+
+.category-card{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+.category-card h3{
+    font-weight: 200;
+    color: #7b7676;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23921568627450981);
+}
+
+.category-card p{
+    text-align: justify;
+    color: #7b7676;
+}
+
+.category-card:hover {
+    cursor: pointer;
+    /*background-color: #eee;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+.category-card:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.07);
+    transition-duration: 0.9s;
+    z-index: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.package-card{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+.package-card h3{
+    font-weight: 200;
+    color: #7b7676;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23921568627450981);
+}
+
+.package-card p{
+    text-align: justify;
+    color: #7b7676;
+}
+
+.package-card:hover {
+    cursor: pointer;
+    /*background-color: #eee;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.package-card:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.07);
+    transition-duration: 0.9s;
+    z-index: 0;
+}
+
+.package-card ul{
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+.package-card li:before{
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #000;
+    font-size: 8px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    margin-left: -20px;
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.main-logo{
+    width: 100px;
+}
+
+.category-carousel{
+    margin-top: 20px;
+}
+
+.tour-description {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
