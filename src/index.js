@@ -12,6 +12,7 @@ import PackageCarousel from './components/package_carousel';
 import Slider from './components/Slider/Slider';
 import TourDescription from './components/tour_description';
 
+import TourMap from './components/tour-map'
 
 class App extends Component {
     constructor(props) {
@@ -23,30 +24,12 @@ class App extends Component {
     render() {
         return (
             <div className="container">
-            <div className="col-md-12">
                 <HeaderTopBar />
-            </div>
-            <div className="col-md-12">
                 <MainNavigation />
-            </div>
-            <div className="col-md-12">
                 <CategoryCarousel />
-            </div>
-            <div className="col-md-12">
                 <PackageCarousel />
-            </div>
-            <div className="col-md-12">
-                <Slider />
-            </div>
-            <div className="col-md-12">
                 <TourDescription />
-            </div>
-                
-                
-                
-                
-                
-                
+                <TourMap />
             </div>
         );
     }
