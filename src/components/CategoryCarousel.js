@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel'
 import { Container } from 'semantic-ui-react'
 
-import PackageCard from './package_card'
+import CategoryCard from './category_card'
 
 
-var itemsToDisplay = [<PackageCard />, <PackageCard />, <PackageCard />, <PackageCard />, <PackageCard />, <PackageCard />];
+var itemsToDisplay = [<CategoryCard />, <CategoryCard />, <CategoryCard />, <CategoryCard />, <CategoryCard />, <CategoryCard />];
 
 class CategoryCarousel extends Component {
     render() {
@@ -14,8 +14,8 @@ class CategoryCarousel extends Component {
                 <OwlCarousel
                     className="owl-theme category-carousel-container"
                     loop margin={50} nav
-                    items={3}
-                    autoplay={false}
+                    items={4}
+                    autoplay={true}
                     autoplayTimeout={2500}
                     animateIn={true}
                     animateOut={true}

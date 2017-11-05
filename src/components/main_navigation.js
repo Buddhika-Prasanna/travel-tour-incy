@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import { Container } from 'semantic-ui-react'
 
+
+
 export default class MainNavigation extends Component {
   state = {}
 
@@ -12,9 +14,14 @@ export default class MainNavigation extends Component {
 
     return (
     <Container className="main-navigation">
-        <Menu stackable>
+        <Menu stackable >
+            <Menu.Item position={'left'}
+                       onClick={this.handleItemClick}
+            >
+               <h3 className={"dummy-logo"}>Travel Tour</h3>
+            </Menu.Item>
 
-            <Menu.Item
+            <Menu.Item position={'right'}
             name='most-popular'
             active={activeItem === 'most-popular'}
             onClick={this.handleItemClick}
