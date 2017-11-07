@@ -10,11 +10,11 @@ var itemsToDisplay = [<CategoryCard />, <CategoryCard />, <CategoryCard />, <Cat
 class CategoryCarousel extends Component {
     render() {
         return (
-            <Container>
+            <Container className="package-carousel-wrapper">
                 <OwlCarousel
                     className="owl-theme category-carousel-container"
-                    loop margin={50} nav
-                    items={4}
+                    loop margin={20} nav
+                    items={5}
                     autoplay={true}
                     autoplayTimeout={2500}
                     animateIn={true}

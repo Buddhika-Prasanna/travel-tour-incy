@@ -6,7 +6,7 @@ const cat_card_style = {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    height: '300px',
+    height: '100px',
     display: false,
     color : 'black'
 }
@@ -16,7 +16,7 @@ class CategoryCard extends Component {
         return (
                 <div  style = { cat_card_style } className ="col-md-12 category-card">
                     <div className="category-card-details">
-                        <div className="cat-card-empty">
+                        <div className="cat-card-empty" style={{'height':'60%'}}>
 
                         </div>
                         <div className="cat-card-name">

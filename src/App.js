@@ -11,6 +11,14 @@ import TourDescription from './components/tour_description';
 import CategoryCarousel from './components/category_carousel';
 import Footer from './components/footer';
 
+const bgstyle = {
+background:'url("/images/main-background.jpeg")', 
+backgroundSize: 'cover', 
+backgroundRepeat: 'no-repeat', 
+backgroundPosition: 'absolute',
+backgroundOpacity: '0.2'
+}
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -22,8 +30,9 @@ class App extends Component {
         return (
             <div>
                 <HeaderTopBar />
+                <MainNavigation />
                 <div className={"container"}>
-                    <MainNavigation />
+                    
                     <CategoryCarousel/>
                     <PackageCarousel />
                     <TourDescription />

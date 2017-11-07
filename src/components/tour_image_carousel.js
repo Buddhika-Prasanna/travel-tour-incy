@@ -12,11 +12,11 @@ class TourImageCarousel extends Component {
         return (
             <Container>
                 <OwlCarousel
-                    className="owl-theme category-carousel-container"
+                    className="owl-theme category-carousel-container tour-image-carousel" 
                     items={1}
                     loop={true}
                     autoplay={true}
-                    autoplayTimeout={2500}
+                    autoplayTimeout={3000}
                     autoplayHoverPause={true}
                 >
                     <div class="item">

@@ -10,12 +10,12 @@ var itemsToDisplay = [<PackageCard />, <PackageCard />, <PackageCard />, <Packag
 class CategoryCarousel extends Component {
     render() {
         return (
-            <Container>
+            <div className="package-carousel-wrapper container">
                 <h3 className="text-center">Most Popular Tours</h3>
                 <OwlCarousel
-                    className="owl-theme category-carousel-container"
-                    loop margin={50} nav
-                    items={3}
+                    className="owl-theme"
+                    loop margin={20} nav
+                    items={4}
                     autoplay={false}
                     autoplayTimeout={2500}
                     animateIn={true}
@@ -32,7 +32,7 @@ class CategoryCarousel extends Component {
                         }
                     )}
                 </OwlCarousel>
-            </Container>
+            </div>
         )
     }
 }
