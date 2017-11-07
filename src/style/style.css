@@ -1,7 +1,13 @@
+
 /*Logo*/
 
 .dummy-logo{
     font-family: fantasy;
+}
+.dummy-logo-footer{
+    font-family: fantasy;
+    color: white;
+    text-align: right;
 }
 
 /*Search Bar*/
@@ -30,46 +36,58 @@
 
 }
 
-
+.cat-card-name {
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.29);
+}
 
 .category-card h3{
     font-weight: 200;
     color: white;
     margin-top: 5px;
     padding-bottom: 5px;
-    padding-top: 75%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.23921568627450981);
 }
 
 .category-card p{
+    display: none;
     text-align: justify;
     color: white;
 }
 
+@keyframes topic-transition {
+    from { background-color: transparent; }
+    to { background-color: rgba(0, 0, 0, 0.49); border-radius: 25px; }
+
+}
+
+@keyframes card-hover {
+    from { background: transparent }
+    to { background: url("./tour_hover.png");}
+
+}
+
+.cat-card-empty{
+    height:85%;
+}
 .category-card:hover {
     cursor: pointer;
     /*background-color: #eee;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
-
-.test{
-    display: none;
-    background-color: black !important;
-    color: black;
+.category-card-details{
+    height:100%;
 }
 
-.category-card:hover .test {
-    display: inline !important;
-    background-color: black !important;
+.category-card:hover .category-card-details{
+    animation: card-hover;
 }
 
-.category-card:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.07);
-    transition-duration: 0.9s;
-    z-index: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.category-card:hover h3{
+    font-weight: 400;
+
+    animation: card-hover;
 }
 
 .category-carousel-container{
@@ -117,21 +135,6 @@
     padding-top: 5px;
 }
 
-.package-card li:before{
-    content: "\f00c";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    /*--adjust as necessary--*/
-    color: #000;
-    font-size: 8px;
-    padding-right: 0.5em;
-    position: absolute;
-    top: 10px;
-    margin-left: -20px;
-}
-
 .category-carousel{
     margin-top: 20px;
 }
@@ -142,21 +145,33 @@
     border-radius: 4px;
 }
 
+.book-button{
+    width:100%;
+}
+
+.tour-name{
+    height:100%;
+}
 .tour-name h3{
     color: white;
     font-weight: 400;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .package-card:hover .tour-name{
-    width: 100%;
-    height:100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.49);
+    animation: card-hover;
 }
 
 .map-wrapper{
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.tour-map{
+    height:390px;
 }
 
 /*Header Background*/

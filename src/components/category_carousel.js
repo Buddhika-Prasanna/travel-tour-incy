@@ -24,7 +24,7 @@ class CategoryCarousel extends Component {
                     {itemsToDisplay.map(
                         function(catCard) {
                             return (
-                                <div class="item">
+                                <div className="item">
                                     { catCard }
                                 </div>
                             )

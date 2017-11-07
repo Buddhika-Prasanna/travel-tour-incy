@@ -5,7 +5,7 @@ class TourMap extends Component {
         return (
             <div className="map-wrapper col-md-12">
                 <h3>Destinations</h3>
-                <img className="img-responsive" src="images/google-maps.jpeg" />
+                <img className="img-responsive tour-map" src="images/google-maps.jpeg" />
             </div>
         )
     }

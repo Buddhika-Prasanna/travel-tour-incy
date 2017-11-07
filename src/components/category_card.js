@@ -15,12 +15,13 @@ class CategoryCard extends Component {
     render() {
         return (
                 <div  style = { cat_card_style } className ="col-md-12 category-card">
-                    <div className="test">
-                    <h3>Most Popular</h3>
-                    <div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </p>
-                    </div>
+                    <div className="category-card-details">
+                        <div className="cat-card-empty">
+
+                        </div>
+                        <div className="cat-card-name">
+                        <h3>Most Popular</h3>
+                        </div>
                     </div>
                 </div>
         )

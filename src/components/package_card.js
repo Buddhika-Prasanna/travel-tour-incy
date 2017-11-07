@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Grid } from 'semantic-ui-react'
 
 const package_card_style = {
-    backgroundImage: 'url("images/tour_A.jpeg")',
+    backgroundImage: 'url("images/tour_C.jpeg")',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -15,6 +15,8 @@ class PackageCard extends Component {
     render() {
         return (
                 <div style = { package_card_style } className ="col-md-12 package-card">
+                    <div className="cat-card-empty">
+                    </div>
                     <div className="tour-name">
                         <h3>Tour A</h3>
                     </div>

@@ -8,7 +8,8 @@ import HeaderTopBar from './components/header_top_bar';
 import MainNavigation from './components/main_navigation';
 import PackageCarousel from './components/package_carousel';
 import TourDescription from './components/tour_description';
-import Carousel from './components/CategoryCarousel';
+import CategoryCarousel from './components/category_carousel';
+import Footer from './components/footer';
 
 class App extends Component {
     constructor(props) {
@@ -23,10 +24,11 @@ class App extends Component {
                 <HeaderTopBar />
                 <div className={"container"}>
                     <MainNavigation />
-                    <Carousel/>
+                    <CategoryCarousel/>
                     <PackageCarousel />
                     <TourDescription />
                 </div>
+                <Footer/>
             </div>
         );
     }

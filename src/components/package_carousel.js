@@ -11,6 +11,7 @@ class CategoryCarousel extends Component {
     render() {
         return (
             <Container>
+                <h3 className="text-center">Most Popular Tours</h3>
                 <OwlCarousel
                     className="owl-theme category-carousel-container"
                     loop margin={50} nav

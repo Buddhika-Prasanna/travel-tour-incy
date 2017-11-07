@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Search, Grid, Header } from 'semantic-ui-react'
-import { Container } from 'semantic-ui-react'
+import { Search, Grid, Header, Container  } from 'semantic-ui-react'
 
 import SocialMediaIcons from './social_media_icons'
 
