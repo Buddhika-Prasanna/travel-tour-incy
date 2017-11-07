@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Container } from 'semantic-ui-react'
 
-import TourMap from './tour-map'
 
 class TourDescription extends Component{
     render() {
