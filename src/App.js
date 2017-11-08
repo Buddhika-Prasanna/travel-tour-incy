@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container } from 'semantic-ui-react'
 import ReactDOM from 'react-dom';
 import 'semantic-ui-css/semantic.min.css';
 import './style/style.css';
@@ -23,7 +24,9 @@ class App extends Component {
     constructor(props) {
         super(props);
 
-        this.state= { currentState: ''}
+        this.state= { 
+            
+        }
     }
 
     render() {
@@ -31,12 +34,11 @@ class App extends Component {
             <div>
                 <HeaderTopBar />
                 <MainNavigation />
-                <div className={"container"}>
-                    
+                <Container>
                     <CategoryCarousel/>
                     <PackageCarousel />
                     <TourDescription />
-                </div>
+                </Container>
                 <Footer/>
             </div>
         );

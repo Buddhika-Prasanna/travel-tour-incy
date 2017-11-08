@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel'
-import { Container } from 'semantic-ui-react'
+import { Container, Segment, Divider } from 'semantic-ui-react'
 
 import CategoryCard from './category_card'
 
@@ -10,9 +10,11 @@ var itemsToDisplay = [<CategoryCard />, <CategoryCard />, <CategoryCard />, <Cat
 class CategoryCarousel extends Component {
     render() {
         return (
-            <Container className="package-carousel-wrapper">
+            <Segment className="package-carousel-wrapper" style={{'backgroundColor':'#e5f1ff'}}>
+                <h3 className="text-center">Tour Categories</h3>
+                <Divider />
                 <OwlCarousel
-                    className="owl-theme category-carousel-container"
+                    className="owl-theme"
                     loop margin={20} nav
                     items={5}
                     autoplay={true}
@@ -31,7 +33,7 @@ class CategoryCarousel extends Component {
                         }
                     )}
                 </OwlCarousel>
-            </Container>
+            </Segment>
         )
     }
 }

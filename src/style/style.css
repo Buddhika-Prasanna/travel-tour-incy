@@ -71,7 +71,7 @@
 }
 
 .cat-card-empty{
-    height:90%;
+    height:85%;
 }
 .category-card:hover {
     cursor: pointer;
@@ -152,8 +152,6 @@
 }
 
 .tour-description {
-    padding: 10px;
-    border-radius: 4px;
 }
 
 .tour-description p{
@@ -256,6 +254,17 @@
     z-index: 2;
 }
 
+/*Tour Description Map Styles*/
+.tour-description-map{
+    Padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.tour-description-map .ui.grid{
+    margin-left: 0px !important;
+}
+
 /*Popup Styles*/
 
 .popup {
@@ -297,10 +306,6 @@
     margin-bottom: 10px;
 }
 
-.sub_destination_card{
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 .bdStyle{
     background:url("http://cdn.pcwallart.com/images/ocean-underwater-light-wallpaper-3.jpg");

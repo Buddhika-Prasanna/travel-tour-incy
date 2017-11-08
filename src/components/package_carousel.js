@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel'
-import { Container } from 'semantic-ui-react'
+import { Container, Divider, Segment } from 'semantic-ui-react'
 
 import PackageCard from './package_card'
 
@@ -10,8 +10,9 @@ var itemsToDisplay = [<PackageCard />, <PackageCard />, <PackageCard />, <Packag
 class CategoryCarousel extends Component {
     render() {
         return (
-            <div className="package-carousel-wrapper container">
+            <Segment className="package-carousel-wrapper container" style={{'backgroundColor':'#e5f1ff'}}>
                 <h3 className="text-center">Most Popular Tours</h3>
+                <Divider />
                 <OwlCarousel
                     className="owl-theme"
                     loop margin={20} nav
@@ -32,7 +33,7 @@ class CategoryCarousel extends Component {
                         }
                     )}
                 </OwlCarousel>
-            </div>
+            </Segment>
         )
     }
 }

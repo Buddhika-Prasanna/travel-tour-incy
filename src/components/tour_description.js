@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import { Container, Grid, Button } from 'semantic-ui-react'
-
-import TourMap from './tour-map'
-import SubDestinationCard from './sub_destination_card'
 import SubDestinationDescription from './sub_destination_description'
+import { Container, Grid, Button, Segment } from 'semantic-ui-react'
+import TourDescriptionMap from './tour_description_map'
+import SubDestinationCard from './sub_destination_card'
 import TourImageCarousel from './tour_image_carousel'
 import PopupForm from './form_popup'
-import TourPortfolio from './tour-portfolio'
+
 
 const tour_description_style = {
     marginTop: '20px',
@@ -21,16 +20,11 @@ var sub_destinations_to_display = [<SubDestinationCard />, <SubDestinationCard /
 class TourDescription extends Component{
     render() {
         return (
-            <Container style = { tour_description_style }>
+            <div className="package-carousel-wrapper">
                 <Grid>
-                    <Grid.Row columns={2} className="test">
-                        <Grid.Column width={9}>
-                            <div className ="tour-description">
-                            <TourPortfolio />
-                            </div>
-                        </Grid.Column>
-                        <Grid.Column width={7}>
-                            <TourMap/>
+                    <Grid.Row>
+                        <Grid.Column>
+                            <TourDescriptionMap />
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2}>
@@ -44,7 +38,6 @@ class TourDescription extends Component{
                                     )
                                 }
                             )}
-                            
                         </Grid.Column>
                         <Grid.Column width={6}>
                             <SubDestinationDescription />
@@ -52,7 +45,8 @@ class TourDescription extends Component{
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-                </Container>
+            </div>
+                
         )
     }
 }

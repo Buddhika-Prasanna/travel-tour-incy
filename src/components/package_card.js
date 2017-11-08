@@ -6,7 +6,7 @@ const package_card_style = {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    height: '350px',
+    height: '300px',
     display: false,
     color : 'black'
 }
