@@ -6,6 +6,8 @@ const sub_destination_style = {
     padding: '10px',
     borderRadius: '4px',
     border: '1px solid #ddd',
+    backgroundColor: 'white',
+    marginBottom: '1px'
 }
 
 class SubDestinationCard extends Component {

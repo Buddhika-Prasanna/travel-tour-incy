@@ -11,6 +11,8 @@ import PackageCarousel from './components/package_carousel';
 import TourDescription from './components/tour_description';
 import CategoryCarousel from './components/category_carousel';
 import Footer from './components/footer';
+import FullWidthBanner from './components/full-width-banner';
+import AllPackages from './components/all_packages'
 
 const bgstyle = {
 background:'url("/images/main-background.jpeg")', 
@@ -25,6 +27,9 @@ class App extends Component {
         super(props);
 
         this.state= { 
+            category_list :["Family", "Adventure", "Hill Country", "Wild Life", "Culture", "Beach"],
+            package_list : ["Galle Fort", "Madu River", "Stilt fishermen", "Turtle Hatchery"],
+
             
         }
     }
@@ -33,12 +38,11 @@ class App extends Component {
         return (
             <div>
                 <HeaderTopBar />
-                <MainNavigation />
-                <Container>
-                    <CategoryCarousel/>
-                    <PackageCarousel />
-                    <TourDescription />
-                </Container>
+                <MainNavigation categories={this.state.category_list} />
+                <CategoryCarousel categories={this.state.category_list} />
+                <AllPackages />
+                <PackageCarousel packages={this.state.package_list} />
+                <TourDescription />
                 <Footer/>
             </div>
         );

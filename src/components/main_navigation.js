@@ -14,45 +14,15 @@ export default class MainNavigation extends Component {
 
     return (
     <Container className="main-navigation">
-        <Menu stackable >
-            <Menu.Item position={'left'}
-                       onClick={this.handleItemClick}
-            >
-               <h3 className={"dummy-logo"}>Travel Tour</h3>
-            </Menu.Item>
-
-            <Menu.Item position={'right'}
-            name='most-popular'
-            active={activeItem === 'most-popular'}
-            onClick={this.handleItemClick}
-            >
-            Most Popular
-            </Menu.Item>
-
-            <Menu.Item
-            name='tour-packages'
-            active={activeItem === 'tour-packages'}
-            onClick={this.handleItemClick}
-            >
-            Tour Packages
-            </Menu.Item>
-
-            <Menu.Item
-            name='booking'
-            active={activeItem === 'booking'}
-            onClick={this.handleItemClick}
-            >
-            Booking
-            </Menu.Item>
-
-            <Menu.Item
-            name='sign-in'
-            active={activeItem === 'sign-in'}
-            onClick={this.handleItemClick}
-            >
-            Sign-in
-            </Menu.Item>
-        </Menu>
+        <Menu fluid widths={this.props.categories.length}>
+        {this.props.categories.map(
+          function(MenuItems) {
+            return(
+              <Menu.Item name={ MenuItems } active={activeItem === { MenuItems }} onClick={MenuItems.handleItemClick} />
+            )
+          })
+        }
+      </Menu>
     </Container>
     )
   }

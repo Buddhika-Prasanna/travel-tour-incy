@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel'
-import { Container, Divider, Segment } from 'semantic-ui-react'
+import { Container, Divider, Segment, Grid, Button, Icon } from 'semantic-ui-react'
 
 import PackageCard from './package_card'
 
@@ -10,30 +10,45 @@ var itemsToDisplay = [<PackageCard />, <PackageCard />, <PackageCard />, <Packag
 class CategoryCarousel extends Component {
     render() {
         return (
-            <Segment className="package-carousel-wrapper container" style={{'backgroundColor':'#e5f1ff'}}>
-                <h3 className="text-center">Most Popular Tours</h3>
-                <Divider />
-                <OwlCarousel
-                    className="owl-theme"
-                    loop margin={20} nav
-                    items={4}
-                    autoplay={false}
-                    autoplayTimeout={2500}
-                    animateIn={true}
-                    animateOut={true}
-                    autoplayHoverPause={true}
-                >
-                    {itemsToDisplay.map(
-                        function(catCard) {
-                            return (
-                                <div class="item">
-                                    { catCard }
-                                </div>
-                            )
-                        }
-                    )}
-                </OwlCarousel>
-            </Segment>
+            <Container className="package-carousel-wrapper">
+                <Grid>
+                    <Grid.Row style={{'marginLeft':'1px'}}>
+                        {/*<Grid.Column width={1}>
+                            <Button basic className="own-nav-custom" icon onClick={ ()=> {this.navInput.prev()}}>
+                                <Icon name='chevron left' />
+                            </Button>
+                        </Grid.Column>*/}
+                        <Grid.Column width={16}>
+                            <OwlCarousel
+                                className="owl-theme"
+                                loop margin={20} nav
+                                items={4}
+                                autoplay={true}
+                                autoplayTimeout={2500}
+                                animateIn={true}
+                                animateOut={true}
+                                autoplayHoverPause={true}
+                                ref={(input) => { this.navInput = input; }}
+                            >
+                                {this.props.packages.map(
+                                    function(catCard) {
+                                        return (
+                                            <div className="item">
+                                                <PackageCard packageName={catCard} />
+                                            </div>
+                                        )
+                                    }
+                                )}
+                            </OwlCarousel>
+                            </Grid.Column>
+                        {/*<Grid.Column width={1}>
+                            <Button basic className="own-nav-custom"  icon onClick={ ()=> {this.navInput.next()}}>
+                                <Icon name='chevron right' />
+                            </Button>
+                        </Grid.Column>*/}
+                    </Grid.Row>
+                </Grid>
+            </Container>
         )
     }
 }

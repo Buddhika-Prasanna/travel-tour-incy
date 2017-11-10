@@ -1,8 +1,13 @@
+#root {
+    background-image: url("./site-background.jpeg");
+}
+
 
 /*Logo*/
 
 .dummy-logo{
     font-family: fantasy;
+    color: white;
 }
 .dummy-logo-footer{
     font-family: fantasy;
@@ -23,7 +28,7 @@
 /*Main Navigation*/
 
 .main-navigation{
-    margin-top: 0px;
+    margin-top: 1em;
     position: static;
     margin-bottom: 20px;
 }
@@ -137,7 +142,6 @@
 
 .package-carousel-wrapper{
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 4px;
     margin-bottom: 20px;
 }
@@ -183,7 +187,7 @@
         height: 90%;
     }
     to {
-        height: 80%;
+        height: 75%;
     }
 }
 .package-card:hover .tour-name{
@@ -201,9 +205,13 @@
     border-radius: 4px;
 }
 
-.tour-map{
+.tour-map-style{    
+    padding: 20px;
+    margin: 15% 0 10% 0;
 }
-
+.tour-map{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
 /*Header Background*/
 
 .color{
@@ -214,8 +222,6 @@
 
 .social-media-icons{
     color: white;
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 /*Carousel Styles*/
@@ -233,10 +239,19 @@
     padding-top: 20px;
 }
 
+.own-nav-custom{
+    height: 100%;
+}
+
+.owl-dots{
+    display: none;
+}
+
 /*Sub Destination Card Styles*/
 .sub_destination_card:hover {
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    zoom: 110%;
 }
 
 /*Common Elements*/
@@ -313,4 +328,32 @@
     background-repeat: no-repeat;
     background-position: absolute;
     opacity: 0.2;
+}
+
+/*Full width image tour*/
+
+.tour-heading-description-style{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 15% 0 10% 0;
+}
+
+.full-width-tour-heading{
+    font-size: 40px;
+    color: white;
+    vertical-align: middle;
+}
+
+.full-width-tour-description{
+    color: white;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/*All tours Style*/
+.all-tours-style .tour-name{
+    display: none;
 }

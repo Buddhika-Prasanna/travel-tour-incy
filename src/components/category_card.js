@@ -11,7 +11,16 @@ const cat_card_style = {
     color : 'black'
 }
 
+var headings = ["Family", "Adventure", "Hill Country"];
+
 class CategoryCard extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state={
+           
+        }
+    }
     render() {
         return (
                 <div  style = { cat_card_style } className ="col-md-12 category-card">
@@ -20,7 +29,7 @@ class CategoryCard extends Component {
 
                         </div>
                         <div className="cat-card-name">
-                        <h3>Most Popular</h3>
+                        <h3>{this.props.heading}</h3>
                         </div>
                     </div>
                 </div>
