@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import SubDestinationDescription from './sub_destination_description'
-import { Container, Grid, Button, Segment } from 'semantic-ui-react'
-import TourDescriptionMap from './tour_description_map'
+import { Container, Grid } from 'semantic-ui-react'
 import SubDestinationCard from './sub_destination_card'
-import TourImageCarousel from './tour_image_carousel'
-import FullWidthBanner from './full-width-banner'
+// import FullWidthBanner from './full-width-banner'
 import PopupForm from './form_popup'
 
 var sub_destinations_to_display = [<SubDestinationCard />, <SubDestinationCard />, <SubDestinationCard />, <SubDestinationCard />]
@@ -13,8 +11,8 @@ class TourDescription extends Component{
     render() {
         return (
             <div>
-                <FullWidthBanner />
-                <Container style={{'marginTop' : '20px', 'marginBottom' : '20px'}}>
+                {/*<FullWidthBanner />*/}
+                <Container style={{ 'marginBottom' : '20px'}}>
                     <Grid>
                         <Grid.Row columns={2}>
                             <Grid.Column width={10}>

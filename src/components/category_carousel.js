@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel'
-import { Container, Segment, Divider, Grid, Button, Icon } from 'semantic-ui-react'
+import { Container, Grid } from 'semantic-ui-react'
 
 import CategoryCard from './category_card'
 
@@ -19,11 +19,6 @@ class CategoryCarousel extends Component {
             <Container>
                 <Grid>
                     <Grid.Row style={{'marginLeft':'1px'}}>
-                        {/*<Grid.Column width={1}>
-                            <Button basic className="own-nav-custom" icon onClick={ ()=> {this.navInput.prev()}}>
-                                <Icon name='chevron left' />
-                            </Button>
-                        </Grid.Column>*/}
                         <Grid.Column width={16}>
                             <OwlCarousel
                                 className="owl-theme"
@@ -47,11 +42,6 @@ class CategoryCarousel extends Component {
                                 )}
                             </OwlCarousel>
                         </Grid.Column>
-                        {/*<Grid.Column width={1}>
-                            <Button basic className="own-nav-custom" icon onClick={ ()=> {this.navInput.next()}}>
-                                <Icon name='chevron right' />
-                            </Button>
-                        </Grid.Column>*/}
                     </Grid.Row>
                 </Grid>
                 </Container>

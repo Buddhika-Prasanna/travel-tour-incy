@@ -42,7 +42,7 @@ class App extends Component {
                 <CategoryCarousel categories={this.state.category_list} />
                 <AllPackages />
                 <PackageCarousel packages={this.state.package_list} />
-                <TourDescription />
+                <FullWidthBanner />
                 <Footer/>
             </div>
         );

@@ -4,9 +4,12 @@ import { Grid, Container } from 'semantic-ui-react'
 import TourMap from './tour-map'
 import TourPortfolio from './tour-portfolio'
 import TourHeadingDescription from './tour_heading_description'
+import TourDescription from './tour_description'
 
 const banner_style = {
-    backgroundImage: 'url("images/full-width-banner.jpeg")',
+    backgroundImage: 'url("images/hikingbg.jpeg")',
+    backgroundRepeat: 'no-repeat',
+    backgroundColor : '#1e1e1f'
 }
 
 
@@ -25,6 +28,7 @@ class FullWidthBanner extends Component {
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>
+                         <TourDescription/>
                     </Grid.Row>
                 </Grid>
                 </Container>
