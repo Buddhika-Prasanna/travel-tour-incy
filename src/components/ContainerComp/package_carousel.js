@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel'
 import { Container, Divider, Segment, Grid, Button, Icon } from 'semantic-ui-react'
 
-import PackageCard from './package_card'
+import PackageCard from './../PrasentationalComp/package_card'
 
 
 var itemsToDisplay = [<PackageCard />, <PackageCard />, <PackageCard />, <PackageCard />, <PackageCard />, <PackageCard />];

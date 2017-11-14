@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Search, Grid, Header, Container  } from 'semantic-ui-react'
 
-import SocialMediaIcons from './social_media_icons'
+import SocialMediaIcons from './../PrasentationalComp/social_media_icons'
 
 
 

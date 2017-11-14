@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Container } from 'semantic-ui-react'
-import TourImageCarousel from './tour_image_carousel'
+import TourImageCarousel from './../ContainerComp/tour_image_carousel'
 
 class TourPortfolio extends Component{
     render() {

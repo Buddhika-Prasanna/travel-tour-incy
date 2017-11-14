@@ -5,14 +5,13 @@ import 'semantic-ui-css/semantic.min.css';
 import './style/style.css';
 import './style/bootstrap.css';
 
-import HeaderTopBar from './components/header_top_bar';
-import MainNavigation from './components/main_navigation';
-import PackageCarousel from './components/package_carousel';
-import TourDescription from './components/tour_description';
-import CategoryCarousel from './components/category_carousel';
-import Footer from './components/footer';
-import FullWidthBanner from './components/full-width-banner';
-import AllPackages from './components/all_packages'
+import CategoryCarousel from './components/ContainerComp/category_carousel';
+import FullWidthBanner from './components/ContainerComp/full-width-banner';
+import PackageCarousel from './components/ContainerComp/package_carousel';
+import MainNavigation from './components/ContainerComp/main_navigation';
+import HeaderTopBar from './components/ContainerComp/header_top_bar';
+import AllPackages from './components/ContainerComp/all_packages'
+import Footer from './components/ContainerComp/footer';
 
 const bgstyle = {
 background:'url("/images/main-background.jpeg")', 

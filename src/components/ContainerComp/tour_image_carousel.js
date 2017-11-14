@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel'
 import { Container } from 'semantic-ui-react'
 
-import CategoryCard from './category_card'
+import CategoryCard from './../PrasentationalComp/category_card'
 
 
 var itemsToDisplay = [<CategoryCard />, <CategoryCard />, <CategoryCard />, <CategoryCard />, <CategoryCard />, <CategoryCard />];

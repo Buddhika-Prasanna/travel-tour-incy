@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import SubDestinationDescription from './sub_destination_description'
 import { Container, Grid } from 'semantic-ui-react'
+import SubDestinationDescription from './sub_destination_description'
 import SubDestinationCard from './sub_destination_card'
-// import FullWidthBanner from './full-width-banner'
 import PopupForm from './form_popup'
 
 var sub_destinations_to_display = [<SubDestinationCard />, <SubDestinationCard />, <SubDestinationCard />, <SubDestinationCard />]
@@ -11,7 +10,6 @@ class TourDescription extends Component{
     render() {
         return (
             <div>
-                {/*<FullWidthBanner />*/}
                 <Container style={{ 'marginBottom' : '20px'}}>
                     <Grid>
                         <Grid.Row columns={2}>

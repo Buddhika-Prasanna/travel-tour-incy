@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Grid, Container } from 'semantic-ui-react'
 
-import TourMap from './tour-map'
-import TourPortfolio from './tour-portfolio'
-import TourHeadingDescription from './tour_heading_description'
-import TourDescription from './tour_description'
+import TourMap from './../PrasentationalComp/tour-map'
+import TourPortfolio from './../PrasentationalComp/tour-portfolio'
+import TourHeadingDescription from './../PrasentationalComp/tour_heading_description'
+import TourDescription from './../PrasentationalComp/tour_description'
 
 const banner_style = {
     backgroundImage: 'url("images/hikingbg.jpeg")',

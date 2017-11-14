@@ -23,16 +23,16 @@ class CategoryCard extends Component {
     }
     render() {
         return (
-                <div  style = { cat_card_style } className ="col-md-12 category-card">
-                    <div className="category-card-details">
-                        <div className="cat-card-empty" style={{'height':'60%'}}>
+            <div  style = { cat_card_style } className ="col-md-12 category-card">
+                <div className="category-card-details">
+                    <div className="cat-card-empty" style={{'height':'60%'}}>
 
-                        </div>
-                        <div className="cat-card-name">
+                    </div>
+                    <div className="cat-card-name">
                         <h3>{this.props.heading}</h3>
-                        </div>
                     </div>
                 </div>
+            </div>
         )
     }
 }

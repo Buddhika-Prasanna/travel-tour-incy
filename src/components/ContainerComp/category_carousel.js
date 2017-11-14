@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel'
 import { Container, Grid } from 'semantic-ui-react'
 
-import CategoryCard from './category_card'
+import CategoryCard from './../PrasentationalComp/category_card'
 
 
 class CategoryCarousel extends Component {
@@ -10,9 +10,7 @@ class CategoryCarousel extends Component {
         super(props);
 
         this.state ={
-            
         }
-
     }
     render() {
         return (
@@ -29,8 +27,7 @@ class CategoryCarousel extends Component {
                                 animateIn={true}
                                 animateOut={true}
                                 autoplayHoverPause={true}
-                                ref={(input) => { this.navInput = input; }}
-                            >
+                                ref={(input) => { this.navInput = input; }}>
                                 {this.props.categories.map(
                                     function(catCard) {
                                         return (
@@ -44,7 +41,7 @@ class CategoryCarousel extends Component {
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-                </Container>
+            </Container>
         )
     }
 }

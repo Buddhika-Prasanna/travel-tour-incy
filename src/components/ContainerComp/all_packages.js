@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Container } from 'semantic-ui-react'
-
-import PackageCard from './package_card'
+import PackageCard from './../PrasentationalComp/package_card'
 
 var all_tours = ["Galle Fort", "Madu River", "Stilt Fishermen", "Turtle Hatchery", "Galle Fort", "Madu River", "Stilt Fishermen", "Turtle Hatchery", "Stilt Fishermen"];
 
@@ -10,7 +9,6 @@ class AllPackages extends Component {
         super(props);
 
         this.state={
-
         }
     }
 
