@@ -1,3 +1,22 @@
+#root {
+    background-image: url("./site-background.jpeg");
+}
+
+
+/*Logo*/
+
+.dummy-logo{
+    font-family: fantasy;
+    color: white;
+}
+.dummy-logo-footer{
+    font-family: fantasy;
+    color: white;
+    text-align: right;
+}
+
+/*Search Bar*/
+
 .search-bar input{
     width: 100%
 }
@@ -6,14 +25,15 @@
     width: 100%;
 }
 
+/*Main Navigation*/
+
 .main-navigation{
-    margin-top: 10px;
+    margin-top: 1em;
+    position: static;
+    margin-bottom: 20px;
 }
 
-.light-border{
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.23921568627450981);
-}
+/*Tour Category Styles*/
 
 .category-card{
     padding: 10px;
@@ -22,34 +42,66 @@
 
 }
 
+.cat-card-name {
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.29);
+}
+
 .category-card h3{
     font-weight: 200;
-    color: #7b7676;
+    font-size: 23px;
+    color: white;
     margin-top: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.23921568627450981);
 }
 
 .category-card p{
+    display: none;
     text-align: justify;
-    color: #7b7676;
+    color: white;
 }
 
+@keyframes topic-transition {
+    from { background-color: transparent; }
+    to { background-color: rgba(0, 0, 0, 0.49); border-radius: 25px; }
+
+}
+
+@keyframes card-hover {
+    from { background: transparent }
+    to { background: url("./tour_hover.png");}
+
+}
+
+.cat-card-empty{
+    height:85%;
+}
 .category-card:hover {
     cursor: pointer;
     /*background-color: #eee;*/
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.category-card-details{
+    height:100%;
 }
 
-.category-card:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.07);
-    transition-duration: 0.9s;
-    z-index: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.category-card:hover .category-card-details{
+    animation: card-hover;
 }
 
+.category-card:hover h3{
+    font-weight: 400;
+
+    animation: card-hover;
+}
+
+.category-carousel-container{
+    margin-top: 20px;
+}
+
+/*Tour Package Styles*/
 
 .package-card{
     padding: 10px;
@@ -62,8 +114,6 @@
     font-weight: 200;
     color: #7b7676;
     margin-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.23921568627450981);
 }
 
 .package-card p{
@@ -90,27 +140,15 @@
     padding-top: 5px;
 }
 
-.package-card li:before{
-    content: "\f00c";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    /*--adjust as necessary--*/
-    color: #000;
-    font-size: 8px;
-    padding-right: 0.5em;
-    position: absolute;
-    top: 10px;
-    margin-left: -20px;
+.package-carousel-wrapper{
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
-.img-responsive{
-    width: 100%;
-}
-
-.main-logo{
-    width: 100px;
+.package-carousel-wrapper h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .category-carousel{
@@ -118,13 +156,213 @@
 }
 
 .tour-description {
+}
+
+.tour-description p{
+    text-align: justify;
+}
+
+.tour-name-map{
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
+.book-button{
+    width:100%;
+}
+
+.tour-name{
+    height:100%;
+}
+.tour-name h3{
+    color: white;
+    font-weight: 400;
+    border-radius: 15px;
+    text-align: center;
+}
+
+@keyframes tour-package{
+    from {
+        height: 90%;
+    }
+    to {
+        height: 75%;
+    }
+}
+.package-card:hover .tour-name{
+    background-color: rgba(0, 0, 0, 0.49);
+    animation: card-hover;
+}
+
+.package-card:hover .cat-card-empty{
+    animation: tour-package 0.8s forwards;
+    -webkit-animation: tour-package 0.8s forwards;
+}
+
 .map-wrapper{
     padding: 10px;
+    border-radius: 4px;
+}
+
+.tour-map-style{    
+    padding: 20px;
+    margin: 15% 0 10% 0;
+}
+.tour-map{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+/*Header Background*/
+
+.color{
+    background-color: #005cbf;
+}
+
+/*Social Media Icons Header*/
+
+.social-media-icons{
+    color: white;
+}
+
+/*Carousel Styles*/
+
+.tour-image-carousel .owl-dots{
+    margin-top: -49px !important;
+    position: inherit;
+}
+
+.owl-nav{
+    display: none;
+}
+
+.owl-dots {
+    padding-top: 20px;
+}
+
+.own-nav-custom{
+    height: 100%;
+}
+
+.owl-dots{
+    display: none;
+}
+
+/*Sub Destination Card Styles*/
+.sub_destination_card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    zoom: 110%;
+}
+
+/*Common Elements*/
+
+.light-border{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23921568627450981);
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.popup{
+    z-index: 2;
+}
+
+/*Tour Description Map Styles*/
+.tour-description-map{
+    Padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.tour-description-map .ui.grid{
+    margin-left: 0px !important;
+}
+
+/*Popup Styles*/
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+}
+.popup_inner .button-close{
+    float: right;
+}
+
+/*Booking Form Styles*/
+
+.booking-form-wrapper{
+    padding: 20px;
+}
+
+.popup_inner {
+    border-radius: 5px;
+}
+
+.popup_inner .form {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.bdStyle{
+    background:url("http://cdn.pcwallart.com/images/ocean-underwater-light-wallpaper-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: absolute;
+    opacity: 0.2;
+}
+
+/*Full width image tour*/
+
+.tour-heading-description-style{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 15% 0 10% 0;
+}
+
+.full-width-tour-heading{
+    font-size: 40px;
+    color: white;
+    vertical-align: middle;
+}
+
+.full-width-tour-description{
+    color: white;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/*All tours Style*/
+.all-tours-style .tour-name{
+}
+
+.all-tours-style .cat-card-empty{
+    display: none;
+}
+
+.all-tours-style .tour-name{
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.49);
+    padding-top: 10px;
 }
