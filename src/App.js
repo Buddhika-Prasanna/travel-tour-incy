@@ -28,10 +28,17 @@ class App extends Component {
         this.state= { 
             category_list :["Family", "Adventure", "Hill Country", "Wild Life", "Culture", "Beach"],
             package_list : ["Galle Fort", "Madu River", "Stilt fishermen", "Turtle Hatchery"],
-
+            users: []
             
         }
     }
+
+    componentDidMount() {
+    fetch('http://localhost:3000/users', {mode: 'no-cors'})
+    
+    .then(res => res.text())
+    .then(users => console.log(users));
+}
 
     render() {
         return (
@@ -43,6 +50,12 @@ class App extends Component {
                 <PackageCarousel packages={this.state.package_list} />
                 <FullWidthBanner />
                 <Footer/>
+                <div className="App">
+                    <h1>Users</h1>
+                    {this.state.package_list.map(user =>
+                    <div key={user.id}>{user.username}</div>
+                    )}
+                </div>
             </div>
         );
     }
